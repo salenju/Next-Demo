@@ -11,6 +11,12 @@ const Salen = ({ router, list }) => {
 			<Link href="/">
 				<a>Home</a>
 			</Link>
+
+			<style jsx>{`
+				p {
+					color: #f40;
+				}
+			`}</style>
 		</div>
 	)
 }
