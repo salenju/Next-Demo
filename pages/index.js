@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
 
@@ -21,6 +22,17 @@ const Home = () => {
 	// routerChangeError-跳转发生错误时
 	Router.events.on('routerChangeError', (...args) => {
 		console.log('===>routerChangeError-跳转发生错误时:', args)
+	})
+
+	// hash 路由
+	// hasChangeStart - hash跳转开始时
+	Router.events.on('hasChangeStart',(...args) => {
+		console.log('===>hasChangeStart-hash跳转开始时:', args)
+	})
+
+	// hashChangeComplete - hash跳转结束时
+	Router.events.on('hashChangeComplete',(...args) => {
+		console.log('===>hashChangeComplete-hash跳转结束时:', args)
 	})
 
 	return (
@@ -55,6 +67,7 @@ const Home = () => {
 					<a>Go to PageC</a>
 				</button>
 			</div>
+				<Link href='#Salen'><a>我是Hash Router</a></Link>
 		</div>
 	)
 }
