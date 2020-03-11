@@ -67,7 +67,7 @@ const Home = () => {
 					<a>Go to PageC</a>
 				</button>
 			</div>
-				<Link href='#Salen'><a>我是Hash Router</a></Link>
+				<Link href='/Salen?name=Helen'><a>我是Hash Router</a></Link>
 		</div>
 	)
 }
