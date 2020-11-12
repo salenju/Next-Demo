@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Button } from 'antd'
 
+import MOLMenu from '../components/MOLMenu'
+
 const Header = () => {
 	return (
 		<div>
@@ -10,6 +12,7 @@ const Header = () => {
 				<meta charSet="utf-8" />>
 			</Head>
 			Salen Ju
+			<MOLMenu />
 			<Button type='primary'>赞</Button>
 		</div>
 	)

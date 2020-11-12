@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
 
+import 'antd/dist/antd.css'
+
 const Home = () => {
 	// 路由钩子事件
 	// routeChangeStart-路由开始变化时
